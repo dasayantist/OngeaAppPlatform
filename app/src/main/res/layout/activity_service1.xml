@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.knatcom.ongeaappplatform.Service1">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Talk to Counselor"
+        android:textColor="#010e04"
+        android:textSize="45sp"
+        android:id="@+id/txt1"/>
+    <TextView
+        android:layout_below="@+id/txt1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Choose Option"
+        android:textColor="#1b4b86"
+        android:textSize="25sp"
+        android:id="@+id/textView" />
+
+    <RadioGroup android:id="@+id/types"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentStart="true"
+        >
+            <RadioButton android:id="@+id/call"
+                android:text="Receive a Call"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:checked="true" />
+            <RadioButton android:id="@+id/sms"
+                android:text="Chat via SMS"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                />
+    </RadioGroup>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Initiate"
+        android:id="@+id/initiate"
+        android:onClick="initiate"
+        android:layout_below="@+id/types"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="49dp" />
+
+
+</RelativeLayout>
